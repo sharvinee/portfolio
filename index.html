@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="=X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Sharvinee Ragunatha Rao</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Sharvinee Ragunatha Rao</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-picture.png" alt="Profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__main">
+          Hello, I'm Sharvinee, a physician-turned-Health Informaticist,
+          integrating clinical expertise with healthcare technology.
+        </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/SharvineeRagunathaRao.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/sharvineerr/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/sharvinee'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <br />
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Professional experience icon"
+                class="centered-icon"
+              />
+              <br />
+              <h2 class="center-text">Professional Experience</h2>
+              <br />
+              <h3 class="center-text">Family Medicine Resident</h3>
+              <p class="center-text">
+                <i>Sungai Udang Health Clinic, Malaysia</i>
+              </p>
+              <p class="center-text">July 2023 - July 2024</p>
+              <br />
+              <div class="text-container">
+                <ul>
+                  <li>
+                    Managed and coordinated a cervical cancer screening project,
+                    including planning, resource allocation, and ensuring timely
+                    execution to provide essential health services to rural
+                    communities, improving access to preventive care
+                  </li>
+                  <li>
+                    Engaged in daily patient consultations optimizing treatment
+                    plans for acute and chronic diseases
+                  </li>
+                </ul>
+              </div>
+              <br />
+              <br />
+              <h3 class="center-text">Wound Care Unit Assistant Coordinator</h3>
+              <p class="center-text">
+                <i>Hospital Tengku Ampuan Rahimah, Malaysia</i>
+              </p>
+              <p class="center-text">June 2021 - July 2023</p>
+              <br />
+              <div class="text-container">
+                <ul>
+                  <li>
+                    Participated in process design and cross-departmental
+                    collaboration to develop clinical workflows, enhancing
+                    operational efficiency and ensuring adherence to clinical
+                    standards
+                  </li>
+                  <li>
+                    Conducted periodic reviews of inpatient files to assess
+                    compliance with wound care recommendations, providing
+                    feedback to improve documentation and treatment practices
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="centered-icon"
+              />
+              <br />
+              <h2 class="center-text">Education</h2>
+              <br />
+              <h3 class="center-text">
+                Master of Science in Health Informatics
+              </h3>
+              <p class="center-text">
+                <i>University of Texas Southwestern Medical Center</i>
+              </p>
+              <p class="center-text">August 2024 - May 2026</p>
+              <br />
+              <div class="text-container">
+                <ul>
+                  <li>
+                    Relevant Coursework: Scientific Literature Review, Clinical
+                    Decision Support, Project Management, Health Information
+                    Technology
+                  </li>
+                </ul>
+              </div>
+              <br />
+              <br />
+              <h3 class="center-text">
+                Bachelor of Medicine and Bachelor of Surgery (MBBS) (MD)
+              </h3>
+              <p class="center-text">
+                <i>Universiti Malaya, Malaysia</i>
+              </p>
+              <p class="center-text">September 2015 - September 2020</p>
+              <br />
+              <div class="text-container">
+                <ul>
+                  <li>
+                    MalaysianDRG Casemix Project: Extracted and analyzed patient
+                    data from Universiti Malaya Medical Centre's ipesakit
+                    Electronic Health Record (EHR) system, converting diagnoses
+                    and procedures into ICD-10 codes for accurate costing and
+                    budgeting assessments
+                  </li>
+                  <li>
+                    Aging and Age-Associated Disorders Research Group:
+                    Gopalakrishnan, N., Ragunatha Rao, S., Mat, S., Kioh, S.,
+                    Chew, Y., Hashim, N., Hairi, N., Kamaruzzan, S., Khoo, S., &
+                    Tan, M. P. (in press). Prospective Five-Year Evaluation of
+                    Falls, Sarcopenia, and Dizziness in the Malaysian Elders
+                    Longitudinal Research (MELoR) Cohort. Aging Medicine and
+                    Healthcare
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Technical Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PowerBI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MS Excel</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Others</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ISC2 Certified in Cybersecurity</h3>
+                  <p>Valid till 2026</p>
+                </div>
+              </article>
+              <!-- <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article> -->
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Agile</h3>
+                  <p>Entry-level</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Check Out My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/clinicai.png"
+                alt="Clinic AI Assistant"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Clinic AI Assistant
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/sharvinee/HorizonClinic_AI'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://horizonclinicai.streamlit.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/myfmcpg.PNG"
+                alt="My FM CPG bot"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              My Family Medicine CPG bot
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/sharvinee/myfmcpgbot'"
+              >
+                Github
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href=''"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:sharvineejobs@gmail.com">sharvineejobs@gmail.com</a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/sharvineerr/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Sharvinee Ragunatha Rao. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
